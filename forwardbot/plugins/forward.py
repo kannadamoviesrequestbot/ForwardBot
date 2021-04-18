@@ -179,7 +179,7 @@ async def handler(event):
                                     await m.edit(f"Now Forwarding {type}.")
                                 else:
                                     try:
-                                        await client.send_message(tochat, message)
+                                        await client.send_message(tochat, message, caption=f"<b>Test</b>")
                                         try:
                                             if len(str(message.message)) == 0:
                                                 logmsg = media_type(message)
